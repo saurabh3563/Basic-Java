@@ -1,0 +1,278 @@
+1.
+import java.util.Scanner;
+class rev
+{
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		int n,i,r=0;
+		System.out.println("Enter Number You Wnat to REverse=");
+		n=s.nextInt();
+		while(n!=0)
+		{
+			i=n%10;
+			r=r*10+i;
+			n/=10;
+		}
+		System.out.println("Reversed Number is "+r);
+	}
+}
+			
+			
+2.
++
++
+++
++
+++
++
++
++
++
++
+
++
++
+3.
+public class pr10 {
+    public static void main(String[] args) {
+        int num = 5;
+        long fac= 1;
+        for(int i = 1; i <= num; ++i)
+        {
+            fac *= i;
+        }
+        System.out.println(“Factorial is = “+fac);
+    } 
+}
+4.
+import java.io.*; 
+  
+class pr9
+ { 
+      
+    static int getSum(int n) 
+    {     
+        int sum = 0; 
+          
+        while (n != 0) 
+        { 
+            sum = sum + n % 10; 
+            n = n/10; 
+        } 
+      
+    return sum; 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+        int n = 687; 
+  
+        System.out.println(getSum(n)); 
+    } 
+} 
+  
+5.
+import java.util.Scanner;
+
+public class pr7{
+
+    public static void main(String[] args) 
+{
+
+        double dollars;
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Please enter dollars:");
+
+        dollars = in.nextLong();
+
+        double rupees = dollars * 72.25;
+
+        System.out.println(rupees + " Rupees");
+
+    }
+}
+6.
+import java.util.Scanner;
+
+public class pr6	
+{
+    public static void main(String args[])
+    {
+    	
+        int marks[] = new int[6];
+        int i;
+        float total=0, avg;
+        Scanner scanner = new Scanner(System.in);
+		
+        
+        for(i=0; i<6; i++) { 
+           System.out.print("Enter Marks of Subject"+(i+1)+":");
+           marks[i] = scanner.nextInt();
+           total = total + marks[i];
+        }
+        scanner.close();
+        avg = total/6;
+        System.out.print("The student Grade is: ");
+        if(avg>=90)
+        {
+            System.out.print("A");
+        }
+        else if(avg>=80 && avg<90)
+        {
+           System.out.print("B");
+        } 
+        else if(avg>=70 && avg<80)
+        {
+            System.out.print("C");
+        }
+ 	else if(avg>=60 && avg<70)
+        {
+            System.out.print(“d”); 
+	}      
+	 else
+        {
+            System.out.print("Needs Improvement");
+        }
+    }
+}
+7.
+class pr1
+{
+	public static void main(String args[])
+	{
+		System.out.println("Hello");
+	}
+}
+8.import java.util.Scanner;
+class ifelse
+{
+	public static void main(String args[])
+	{
+		int  a,b,c,grade,total=0,i;
+		String name;
+		Scanner st = new Scanner(System.in);
+		name= st.nextLine();
+		System.out.println("Student Name:"+name);
+		System.out.println("Enter Subject 1 marks:");
+		a=st.nextInt();
+		System.out.println("Enter Subject 2 marks:");
+		b=st.nextInt();
+		System.out.println("Enter Subject 3 marks:");
+		c=st.nextInt();
+		
+		total=total+a+b+c;
+		grade=total/3;
+		System.out.println("Grade : "+grade);
+		if(grade>=90)
+		{
+			System.out.println("A Grade");
+		}
+		else if(grade<=90 &&  grade>=80)
+		{
+			System.out.println("B grade");
+		}
+		else if(grade<=80 &&  grade>=70)
+		{
+			System.out.println("C grade");
+		}
+		else if(grade<=70 &&  grade>=60)
+		{
+			System.out.println("D grade");
+		}
+		else if(grade<=60 &&  grade>=50)
+		{
+			System.out.println("E grade");
+		}
+		else{
+			System.out.println("Need Improvement");
+		}
+		
+		
+	}
+}
+9.import java.util.Scanner;
+class fib
+{
+	public static void main(String args[])
+	{
+		int a=0,b=1,c=0,n;
+		Scanner u=new Scanner(System.in);
+		System.out.println("Enter Number Till u want ");
+		n=u.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			c=a+b;
+			
+			a=b;
+			b=c;
+		}
+		System.out.println("Fiba="+c);
+	}
+}
+		
+10.
+import java.util.Scanner;
+class calc
+{
+	public static void main(String args[])
+	{
+		
+		char o;
+		int a,b,total;
+		Scanner c=new Scanner(System.in);
+		System.out.println("Enter Number 1=");
+		a=c.nextInt();
+		System.out.println("Enter Operator=");
+		o = c.next().charAt(0);
+		System.out.println("Enter NUmber 2=");
+		b=c.nextInt();
+		switch(o)
+		{
+			case '+':
+			{
+				total=a+b;
+				System.out.println("Total="+total);
+				break;
+			}
+			case '-':
+			{
+				total=a-b;
+				System.out.println("Total="+total);
+				break;
+			}
+			case '*':
+			{
+				total=a*b;
+				System.out.println("Total="+total);
+				break;
+			}
+			case '/':
+			{
+				total=a/b;
+				System.out.println("Total="+total);
+				break;
+			}
+			default:
+			{
+				System.out.println("Invalid choice");
+			}
+		}
+	}
+}
+		
+11.
+import java.util.Scanner;
+class argument
+{
+	public static void main(String args[])
+	{
+		String s;
+		Scanner st = new Scanner(System.in);
+		s= st.nextLine();
+		System.out.println("Enter Argument is "+s);
+	}
+}
+12.
